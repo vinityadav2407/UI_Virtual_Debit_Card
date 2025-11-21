@@ -7,12 +7,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipping Card UI Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+       <!----------------- navBar -------------------------------->
+<nav class="fixed-top navWrapper bg-body-tertiary py-1">
+  <div class="container">
+
+    <!-- TOP ICON ROW -->
+    <div class="w-100 d-flex justify-content-end py-1 px-2 small">
+      <div class="d-flex gap-3">
+        <div class=" navTopIcon d-flex align-items-center gap-1">
+          <i class="fa-solid fa-circle-info"></i><span class="fw-light">Help Center</span>
+        </div>
+        <div class=" navTopIcon d-flex align-items-center gap-1">
+          <i class="fa-solid fa-envelope"></i><span class="fw-light">Mail Us</span>
+        </div>
+        <div class=" navTopIcon d-flex align-items-center gap-1">
+          <i class="fa-solid fa-phone"></i><span class="fw-light">Call Us</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="navbar navbar-expand-lg  p-0 gap-4">
+
+      <a class="navbar-brand m-0" href="#">
+        <img src="./assets/log-3.png" height="60" width="70" alt="" >
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex ms-auto gap-4">
+          <li class="nav-item" ><a class="nav-link active py-2" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="#">Personal</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="#">Corporate</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="#">International</a></li>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cards
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+            <li><a class="dropdown-item" href="#">Debits Cards</a></li>
+            <li><a class="dropdown-item" href="#">Corporate Cards</a></li>
+            <li><a class="dropdown-item" href="#">Central Travel Cards</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
+          <li class="nav-item"><a class="nav-link py-2" href="#">CardSecurity</a></li>
+          <li class="nav-item"><a class="nav-link py-2" href="#">Login</a></li>
+        </ul>
+      </div>
+
+
+      <form class="d-flex" role="search">
+      <input class="form-control me-2 py-1" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-dark py-1" type="submit">Search</button>
+    </form>
+
+    </nav>
+
+  </div>
+</nav>
+
+
+
     <section>
-        <div class="container">
+        <div class="mainContainer">
             <div class="card front-face">
                 <header>
                     <span class="logo">
@@ -52,6 +124,164 @@
             </div>
         </div>
     </section>
+      
+     <!---------------------------- Section-cards  ------------------------------------->
+     <div class="cardHeading py-4 text-center">
+  <h2 class="mx-auto">Giving You the Edge</h2>
+</div>
+
+    <div id="cards-Section " class="py-2 cards">
+      <div class="container">
+        <div class="row">
+          
+        <div class="col-12 col-md-6 mt-2 col-lg-3">
+          <div class="card py-5" style="width:100">
+           <div class="imgIcon d-flex align-items-center justify-content-center py-2 ">
+            <i class="fa-solid fa-business-time fs-1 "></i>
+           </div>
+
+            <div class="card-body">
+              <h4>Business Expertise</h4>
+              <p class="py-4">Global insight, local expertise</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+       <div class="col-12 col-md-6 mt-2 col-lg-3">
+          <div class="card py-5">
+            <div class="imgIcon d-flex align-items-center justify-content-center py-2 ">
+            <i class="fa-solid fa-globe fs-1 "></i>
+           </div>
+            <div class="card-body">
+              <h4>Global Acceptance </h4>
+              <p class="py-4">Global insight, local expertise</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+        </div>
+         
+        
+       <div class="col-12 col-md-6  mt-2 col-lg-3">
+          <div class="card py-5 ">
+            <div class="imgIcon d-flex align-items-center justify-content-center py-2 ">
+            <i class="fa-solid fa-computer fs-1"></i>
+           </div>
+
+            <div class="card-body">
+              <h4> Technology and Innovation </h4>
+              <p class="py-4">Global insight, local expertise</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6  mt-2 col-lg-3">
+          <div class="card py-5 " style="width:100">
+            <div class="imgIcon d-flex align-items-center justify-content-center py-2 ">
+           <i class="fa-solid fa-shield fs-1"></i>
+           </div>
+            <div class="card-body ">
+               <h4>Security and Control</h4>
+               <p class="py-4">Global insight, local expertise</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card’s content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Section-leftImg&Text -->
+
+    <div id="imgText" class="py-4">
+       <div class="container custom-container">
+
+        <div class="row align-items-center">
+
+            <div class="leftImg col-12 col-md-6">
+               <img src="./assets/card.png" alt="" class="  rounded-3">
+            </div>
+
+            <div class="rightText col-12 col-md-6 d-flext align-items-center ">
+              <h4 class=" mt-3 mt-md-0 ">Achieve higher efficiencies</h4>
+              <p class=" mt-3 mt-md-0 ">Experience the joy of simplified processes by cutting down on multiple payment procedures and cheques.</p>
+                <p class=" mt-3 mt-md-0 "> 
+                    We have created customizable billing and payment options for you that fit in well with your business requirement. In the case of query or adaptability issues, we have a dedicated account management team to help you out with. <br><br><br>
+                     We also help you reduce risk of fraud on your card in case of loss or theft with our limited loss card liability, which starts 48-hours prior to notification of card loss to seven days after it. The sum insured under this limited loss card liability is Rs. 3 lakhs.
+                 </p>
+            </div>
+        </div>
+       </div>
+    </div>
+
+    <!----------------------------- footer-section ------------------------------>
+<footer id="footer" class="py-4 bg-body-tertiary text-dark">
+  <div class="container">
+    <div class="row">
+
+      <!-- Left Section -->
+      <div class="col-12 col-md-4">
+        <div class="logo">
+          <img src="./assets/log-3.png" alt="" style="height: 4rem; width:5rem;">
+          <p class="pt-3 mb-0">&copy; 2025 All Rights Reserved!</p>
+        </div>
+      </div>
+
+      <!-- Center Section (top aligned) -->
+      <div class="col-12 col-md-4 d-flex flex-column justify-content-start">
+        <div class="centerInfo d-flex flex-column gap-2">
+          <span>Personal</span>
+          <span>Corporate</span>
+          <span>Who We Are</span>
+          <span>Get In Touch</span>
+          <span>Blog</span>
+          <span>Help</span>
+        </div>
+      </div>
+
+      <!-- Right Section (start from second line height) -->
+      <div class="col-12 col-md-4">
+        <div class="infoText d-flex justify-content-between pt-md-4">
+
+          <div class="right">
+            <p class="fw-semibold">Company</p>
+            <p>Services</p>
+            <p>Privacy & Policy</p>
+          </div>
+
+          <div class="right">
+            <p class="fw-semibold">Support</p>
+            <p>FAQ</p>
+            <p>Terms & Conditions</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
